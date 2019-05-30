@@ -70,11 +70,8 @@ header {
 
 header div {
     color: black;
-    font-size: 2rem;
+    font-size: 30px;
     margin: 1.5rem;
 }
 
-header div:hover {
-    
-}
 
