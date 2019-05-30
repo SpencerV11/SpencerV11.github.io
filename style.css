@@ -11,7 +11,7 @@ body {
 header {
     width: 100%;
     height: 11vh;
-    background-color: rgba(248, 0, 0, 0.795);
+    background-color: rgba(248, 248, 248);
     position: fixed;
     top: 0;
     display: flex;
@@ -34,8 +34,8 @@ header div:hover {
 .name {
     background-color: rgba(255, 255, 255, 0.11);
     text-align: center;
-    width: 30rem;
-    height: 30rem;
+    width: 35rem;
+    height: 35rem;
     position: absolute;
     top: 25vh;
     left: 15vw;
@@ -68,9 +68,19 @@ header div:hover {
 
 .flex-icons {
     display: flex;
-
+    justify-content: space-evenly;
+    width: 20rem;
+    margin: 1rem;
 }
 
+.flex-icons div {
+    font-size: 2rem;
+}
+
+.flex-icons div:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
 
 .about {
     width: 100%;
