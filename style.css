@@ -21,7 +21,7 @@ header {
 
 header div {
     color: black;
-    font-size: 25px;
+    font-size: 1rem;
     margin: 1.5rem;
 }
 
@@ -32,10 +32,10 @@ header div:hover {
 }
 
 .name {
-    background-color: rgba(255, 255, 255, 0.11);
+    background-color: rgba(255, 255, 255, 0.116);
     text-align: center;
-    width: 35rem;
-    height: 35rem;
+    width: 25rem;
+    height: 25rem;
     position: absolute;
     top: 25vh;
     left: 15vw;
@@ -48,7 +48,7 @@ header div:hover {
 }
 
 .name .me {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: rgb(238, 238, 238);
     letter-spacing: 2px;
@@ -74,7 +74,7 @@ header div:hover {
 }
 
 .flex-icons div {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .flex-icons div:hover {
