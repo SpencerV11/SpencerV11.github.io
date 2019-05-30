@@ -74,4 +74,8 @@ header div {
     margin: 1.5rem;
 }
 
+header div:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
 
