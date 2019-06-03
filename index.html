@@ -5,21 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/ee524a2222.js"></script>
     <title>Spencer's Portfolio</title>
+    <script>
+        // $(function () {
+        //     $(window).on("scroll", function () {
+        //         if ($(window).scrollTop() > 50) {
+        //             console.log('working')
+        //             $(".header").addClass("transparent");
+        //         } else {
+        //             //remove the background property so it comes transparent again (defined in your css)
+        //             $(".header").removeClass("transparent");
+        //         }
+        //     })
+        // })
+        let el = document.querySelector('.header')
+        let scrollTop = window.pageYOffset
+        console.log(scrollTop)
+        // window.onscroll = function() {changeHeader()}
+        // let changeHeader = () => {
+        //     let headerBar = document.getElementsByClassName('.header')
+        //     let windowPosition = headerBar.scrollTop()
+        //     console.log(windowPosition)
+        //     // if(window.scrollTop() > 5) {
+        //     //     console.log('hi')
+        //     // } else {
+        //     //     console.log('asdf')
+        //     // }
+        // }
+
+        // changeHeader()
+    </script>
 </head>
 
 <body>
     <div id='home'></div>
-    <header>
+    <header class='header'>
         <a id='black' href='#home'>HOME</a>
         <a id='blue' href='#about'>ABOUT</a>
         <a id='red' href='#skills'>SKILLS</a>
         <a id='yellow' href='#projects'>PROJECTS</a>
         <a id='green' href='#contact'>CONTACT</a>
     </header>
-    <img width='100%' src="./images/tim-swaan-45717-unsplash (1).jpg" alt="" />
+    <img width='100%' src="./images/johann-siemens-591-unsplash.jpg" alt="" />
     <div class='name'>
         <div class="me">Spencer Voorhees</div>
         <div class='web-dev'>Web Developer</div>
@@ -38,18 +69,38 @@
         <line></line>
         <div class='who-am-i-content'>
             <p>My name is Spencer Voorhees and I am a Web Developer</p>
-            <p>I have always wanted a career that would be fun but challenging. A career that would be hard but also exciting in a way that I could create simple/easy to use applications for customers. When I am not developing, I like to play any type of sports/ do anything outdoors.</p>
+            <p>I have always wanted a career that would be fun but challenging. A career that would be hard but also
+                exciting in a way that I could create simple/easy to use applications for customers. When I am not
+                developing, I like to play any type of sports/ do anything outdoors.</p>
         </div>
     </div>
 
     <div id='skills'>
         <div class='skills-content'>
-            <div class='skill-item'>React</div>
-            <div class='skill-item'>HTML/CSS</div>
-            <div class='skill-item'>Javascript</div>
-            <div class='skill-item'>Node.js</div>
-            <div class='skill-item'>Postgresql</div>
-            <div class='skill-item'>Express</div>
+            <div class='skill-item'>
+                <img width='300' src='./images/react.png' alt=''/>
+                <div>React</div>
+            </div>
+            <div class='skill-item'>
+                <img width='220' src='./images/html_css.png' alt=''/>
+                <div>HTML/CSS</div>
+            </div>
+            <div class='skill-item'>
+                <img width='400' src='./images/Javascript.png' alt=''/>
+                <div>Javascript</div>
+            </div>
+            <div class='skill-item'>
+                <img width='370' src='./images/nodejs2.png' alt=''/>
+                <div>Node.js</div>
+            </div>
+            <div class='skill-item'>
+                <img width='180' src='./images/elephant.png' alt=''/>
+                <div>Postgresql</div>
+            </div>
+            <div class='skill-item'>
+                <img width='180' src='./images/express2.png' atl=''/>
+                <div>Express</div>
+            </div>
         </div>
         <line></line>
         <div class='skills-title'>
@@ -59,14 +110,17 @@
     </div>
 
     <div id='projects'>
-            <div class='my-projects-title'>
-                <h1>-Projects</h1>
-                <p>Personal & Group Projects</p>
-            </div>
-            <line></line>
-            <div class='project-content'></div>
+        <div class='my-projects-title'>
+            <h1>-Projects</h1>
+            <p>Personal & Group Projects</p>
+        </div>
+        <line></line>
+        <div class='project-content'>
+            <a href='https://www.orendaaesthetics.com/#/'><img width='400' height='170' src='./images/OrendaAesthetics.png' alt=''/></a>
+            <a href='http://138.68.247.136:4444/#/'><img width='400' height='170' src='./images/airbnblogo.png' alt=''/></a>
+        </div>
     </div>
-    
+
     <div id='contact'>
         <div class='contact-content'>
             <div><strong>Email-</strong> <br> spencer.voorhees17@gmail.com</div>
@@ -79,4 +133,5 @@
         </div>
     </div>
 </body>
+
 </html>

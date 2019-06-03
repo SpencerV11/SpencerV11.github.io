@@ -8,7 +8,7 @@ body {
     position: relative;
 }
 
-header {
+.header {
     width: 100%;
     height: 11vh;
     background-color: rgb(238, 238, 238);
@@ -21,14 +21,18 @@ header {
     z-index: 10;
 }
 
-header a {
+.header .transparent {
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+.header a {
     color: rgb(8, 8, 8);
     font-size: .9em;
     margin: 1.5rem;
     text-decoration: none;
 }
 
-header a:hover {
+.header a:hover {
     transform: scale(1.10);
     cursor: pointer;
     border-bottom: 1px solid rgb(8, 8, 8);
@@ -37,7 +41,7 @@ header a:hover {
     /* color: rgb(94, 160, 245); */
 }
 
-header a:focus {
+.header a:focus {
     transform: scale(1);
 }
 
@@ -48,24 +52,24 @@ header a:focus {
     height: 25rem;
     position: absolute;
     top: 25vh;
-    left: 15vw;
+    left: 10vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 5px solid white;
+    border: 5px solid rgba(0, 0, 0, 0.459);
     border-radius: 50%;
 }
 
 .name .me {
     font-size: 3rem;
     font-weight: 700;
-    color: rgb(238, 238, 238);
+    color: rgba(0, 0, 0, 0.459);
     letter-spacing: 2px;
 }
 
 .name .web-dev {
-    color: white;
+    color: rgba(0, 0, 0, 0.459);
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 5px;
@@ -73,7 +77,7 @@ header a:focus {
 }
 
 .name div {
-    color: white;
+    color: rgba(0, 0, 0, 0.459);
 }
 
 .flex-icons {
@@ -86,7 +90,7 @@ header a:focus {
 .flex-icons a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: white;
+    color: rgba(0, 0, 0, 0.459);
 }
 
 .flex-icons a:hover {
@@ -185,19 +189,31 @@ header a:focus {
 }
 
 .skills-content {
-    width: 50rem;
+    width: 45rem;
     height: 30rem;
     border: 3px solid rgba(0, 0, 0, 0.459);
     background-color: rgb(204, 204, 204);
     z-index: 3;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 15rem 15rem 15rem;
+    grid-template-rows: 15rem 15rem 15rem;
 }
 
 .skill-item {
     border: 1px solid rgb(145, 145, 145);
     /* width: 15rem;
     heigth: 15rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.skill-item div {
+    position: absolute;
+    bottom: 4px;
+    font-weight: 700;
 }
 
 .skills-title {
@@ -226,6 +242,11 @@ header a:focus {
     margin-bottom: 0px;
     padding-bottom: 0px;
     font-weight: 500;
+}
+
+.postgresql {
+    font-size: 10px;
+    
 }
 
 #projects {
@@ -265,11 +286,24 @@ header a:focus {
 }
 
 .project-content {
-    width: 50rem;
-    height: 25rem;
+    width: 55rem;
+    height: 18rem;
     background-color: rgb(204, 204, 204);
     border: 3px solid rgba(0, 0, 0, 0.459);
     z-index: 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-content img {
+    border-top: 3px solid rgba(0, 0, 0, 0.459);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.459);
+}
+
+.project-content img:hover {
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.025);
 }
 
 #contact {
