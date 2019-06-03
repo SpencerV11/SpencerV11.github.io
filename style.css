@@ -9,16 +9,6 @@ body {
     height: 140vh;
 }
 
-@media(max-width: 1566px) {
-    .background {
-        height: 120vh;
-    }
-}
-
-@media(max-width: 1334px) {
-
-}
-
 .main-content {
     position: relative;
 }
@@ -364,10 +354,6 @@ body {
     margin: 0px;
 }
 
-.contact-title p {
-
-}
-
 .contact-content {
     width: 50rem;
     height: 15rem;
@@ -379,15 +365,61 @@ body {
     align-items: center;
 }
 
+@media(max-width: 1566px) {
+    .background {
+        height: 120vh;
+    }
+}
+
 @media(max-width: 1024px) {
     .background {
         height: 80vh;
     }
+
+    .who-am-i-content {
+        width: 25rem;
+        height: 30rem;
+    }
+
+    .skills-content {
+        width: 30rem;
+        height: 40rem;
+        grid-template-columns: 15rem 15rem;
+        grid-template-rows: auto auto auto;
+    }
+
+    .project-content {
+        width: 30rem;
+        height: 40rem;
+        flex-direction: column;
+    }
+
+    .contact-content {
+        width: 25rem;
+        height: 30rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
 
 @media(max-width: 1334px) {
     #about {
         flex-direction: column;
+    }
+
+    .name {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .name .me {
+        font-size: 2rem;
+    }
+
+    .name .web-dev {
+        letter-spacing: 3px;
+        font-size: 1.3rem;
     }
 
     .who-am-i-content {
@@ -440,5 +472,11 @@ body {
     #contact line {
         width: 3px;
         height: 100vh;
+    }
+}
+
+@media(max-width: 1170px) {
+    .background {
+        height: 100vh; 
     }
 }
