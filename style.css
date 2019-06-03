@@ -4,6 +4,21 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.background {
+    width: 100%;
+    height: 140vh;
+}
+
+@media(max-width: 1566px) {
+    .background {
+        height: 120vh;
+    }
+}
+
+@media(max-width: 1334px) {
+
+}
+
 .main-content {
     position: relative;
 }
@@ -21,15 +36,17 @@ body {
     z-index: 10;
 }
 
-.header .transparent {
-    background-color: rgba(0, 0, 0, 0.459);
-}
-
 .header a {
     color: rgb(8, 8, 8);
     font-size: .9em;
     margin: 1.5rem;
     text-decoration: none;
+}
+
+@media(max-width: 1974px) {
+    .header a {
+        margin-right: 3.5rem;
+    }
 }
 
 .header a:hover {
@@ -174,8 +191,11 @@ body {
 }
 
 .who-am-i-content p {
+    text-align: center;
     padding-left: 20px;
     padding-right: 20px;
+    font-weight: 500;
+    line-height: 20px;
 }
 
 #skills {
@@ -216,7 +236,14 @@ body {
     font-weight: 700;
 }
 
+.skill-item img:hover {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: 1s;
+}
+
 .skills-title {
+    margin: 0px;
     width: 20rem;
     height: 10rem;
     border: 3px solid rgba(0, 0, 0, 0.459);
@@ -239,14 +266,9 @@ body {
 }
 
 .skills-title h1 {
-    margin-bottom: 0px;
+    margin: 0px;
     padding-bottom: 0px;
     font-weight: 500;
-}
-
-.postgresql {
-    font-size: 10px;
-    
 }
 
 #projects {
@@ -282,6 +304,7 @@ body {
 }
 
 .my-projects-title h1 {
+    margin-bottom: 0px;
     font-weight: 500;
 }
 
@@ -338,6 +361,11 @@ body {
 
 .contact-title h1 {
     font-weight: 500;
+    margin: 0px;
+}
+
+.contact-title p {
+
 }
 
 .contact-content {
@@ -349,4 +377,68 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+@media(max-width: 1024px) {
+    .background {
+        height: 80vh;
+    }
+}
+
+@media(max-width: 1334px) {
+    #about {
+        flex-direction: column;
+    }
+
+    .who-am-i-content {
+        margin-left: 0rem;
+        margin-top: 3rem;
+    }
+
+    #about line {
+        width: 3px;
+        height: 100vh;
+    }
+
+    #skills {
+        flex-direction: column-reverse;
+    }
+
+    #skills line {
+        width: 3px;
+        height: 100vh;
+    }
+
+    .skills-title {
+        margin-left: 0rem;
+        margin-bottom: 3rem;
+    }
+
+    #projects {
+        flex-direction: column;
+    }
+
+    .my-projects-title {
+        margin-right: 0rem;
+        margin-bottom: 3rem;
+    }
+
+    #projects line {
+        width: 3px;
+        height: 100vh;
+    }
+
+    #contact {
+        flex-direction: column-reverse;
+    }
+
+    .contact-title {
+        margin-left: 0rem;
+        margin-bottom: 3rem;
+    }
+
+    #contact line {
+        width: 3px;
+        height: 100vh;
+    }
 }
