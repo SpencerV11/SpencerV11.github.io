@@ -33,11 +33,11 @@ body {
     text-decoration: none;
 }
 
-@media(max-width: 1974px) {
+/* @media(max-width: 1974px) {
     .header a {
         margin-right: 3.5rem;
     }
-}
+} */
 
 .header a:hover {
     transform: scale(1.10);
@@ -365,15 +365,34 @@ body {
     align-items: center;
 }
 
-@media(max-width: 1566px) {
-    .background {
-        height: 120vh;
-    }
+.background2 {
+    display: none;
+    background-size: cover;
 }
 
 @media(max-width: 1024px) {
+    .name {
+        width: 25rem;
+        height: 25rem;
+        top: 40vh;
+        left: calc(50vw - 10rem);
+        border: 5px solid white;
+    }
+    
+    .name .me {
+        color: white;
+    }
+
+    .name .web-dev {
+        color: white;
+    }
+
+    .color-icon {
+        color: white;
+    }
+
     .background {
-        height: 80vh;
+        display: none;
     }
 
     .who-am-i-content {
@@ -401,6 +420,12 @@ body {
         text-align: center;
     }
 
+}
+
+@media(max-width: 1170px) {
+    .background {
+        height: 90vh; 
+    }
 }
 
 @media(max-width: 1334px) {
@@ -475,8 +500,14 @@ body {
     }
 }
 
-@media(max-width: 1170px) {
+@media(max-width: 1566px) {
     .background {
-        height: 100vh; 
+        height: 120vh;
+    }
+
+    .background2 {
+        display: block;
+        width: 100%;
+        height: 100vh;
     }
 }
