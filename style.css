@@ -563,8 +563,14 @@ body {
 
     .skills-content {
         width: 23rem;
-        grid-template-columns:  12rem 11rem;
+        grid-template-columns:  11.5rem 11.5rem;
         height: auto;
+    }
+
+    .skills-content img {
+        width: 80px;
+        margin-top: .3rem;
+        margin-bottom: 2rem;
     }
 
     .project-content {
