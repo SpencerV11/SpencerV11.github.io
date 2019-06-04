@@ -366,6 +366,7 @@ body {
 }
 
 
+
 @media(max-width: 554px) {
     #about {
         height: auto;
@@ -404,7 +405,6 @@ body {
     .contact-title {
         margin-top: 3rem;
     }
-
 }
  .background2 {
     display: none;
@@ -548,5 +548,29 @@ body {
         display: block;
         width: 100%;
         height: 100vh;
+    }
+}
+
+@media(max-width: 414px) {
+    .header {
+        justify-content: center;
+    }
+
+    .header a {
+        margin: .7rem;
+    }
+
+    .skills-content {
+        width: 23rem;
+        grid-template-columns:  12rem 11rem;
+        height: auto;
+    }
+
+    .project-content {
+        width: 23rem;
+    }
+
+    .project-content img {
+        width: 23rem;
     }
 }
