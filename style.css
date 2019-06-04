@@ -17,7 +17,7 @@ body {
 .main-content {
     position: relative;
 }
-
+/* Header containing all the links to different parts of the page */
 .header {
     width: 100%;
     height: 11vh;
@@ -56,7 +56,7 @@ body {
 .header a:focus {
     transform: scale(1);
 }
-
+/* Circle that has my name, web developer, and social media icons */
 .name {
     background-color: rgba(255, 255, 255, 0.116);
     text-align: center;
@@ -135,6 +135,7 @@ body {
     background-color: rgb(118, 233, 108);
 }
 
+/* Contains why I do what I do. Contains a paragraph display */
 #about {
     width: 100%;
     height: 100vh;
@@ -193,6 +194,7 @@ body {
     line-height: 20px;
 }
 
+/* Contains skill title and some images of my skills */
 #skills {
     width: 100%;
     height: 100vh;
@@ -266,6 +268,7 @@ body {
     font-weight: 500;
 }
 
+/* project title and group and personal project */
 #projects {
     width: 100%;
     height: 100vh;
@@ -324,6 +327,7 @@ body {
     transform: scale(1.025);
 }
 
+/* contains contact title and my contact information */
 #contact {
     display: flex;
     justify-content: center;
