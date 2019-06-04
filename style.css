@@ -365,16 +365,55 @@ body {
     align-items: center;
 }
 
-.background2 {
+
+@media(max-width: 554px) {
+    #about {
+        height: auto;
+    }
+    .who-am-i {
+        margin: 3rem;
+    }
+
+    .who-am-i-content {
+        margin: 1rem;
+    }
+    #skills {
+        height: auto;
+    }
+
+    .skills-title {
+        margin-top: 3rem;
+    }
+
+    #projects {
+        height: auto;
+    }
+
+    .my-projects-title {
+        margin-top: 3rem;
+    }
+
+    #contact {
+        height: auto;
+    }
+
+    #contact line {
+        height: 90vh;
+    }
+
+    .contact-title {
+        margin-top: 3rem;
+    }
+
+}
+ .background2 {
     display: none;
-    background-size: cover;
+    background-size: cover;    
 }
 
 @media(max-width: 1024px) {
     .name {
-        width: 25rem;
-        height: 25rem;
-        top: 40vh;
+        top: 30vh;
         left: calc(50vw - 10rem);
         border: 5px solid white;
     }
