@@ -406,11 +406,6 @@ body {
         margin-top: 3rem;
     }
 }
- .background2 {
-    display: none;
-    background-size: cover;    
-}
-
 @media(max-width: 1024px) {
     .name {
         top: 30vh;
@@ -539,18 +534,6 @@ body {
     }
 }
 
-@media(max-width: 1566px) {
-    .background {
-        height: 120vh;
-    }
-
-    .background2 {
-        display: block;
-        width: 100%;
-        height: 100vh;
-    }
-}
-
 @media(max-width: 414px) {
     .header {
         justify-content: center;
@@ -573,4 +556,21 @@ body {
     .project-content img {
         width: 23rem;
     }
+}
+
+@media(max-width: 1566px) {
+    .background {
+        height: 120vh;
+    }
+
+    .background2 {
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+.background2 {
+    display: none;
+    background-size: cover;    
 }
