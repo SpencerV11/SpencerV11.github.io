@@ -370,11 +370,20 @@ body {
     border: 3px solid rgba(0, 0, 0, 0.459);
     z-index: 3;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
+.contact-content div {
+    margin: .5rem;
+    margin-left: 10rem;
+}
 
+.contact-content a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
 
 @media(max-width: 554px) {
     #about {
@@ -422,6 +431,17 @@ body {
     }
 }
 @media(max-width: 1024px) {
+
+    .contact-content {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .contact-content div {
+        margin-left: .5rem;
+        text-align: left;
+
+    }
 
     .background2 {
         display: block;
