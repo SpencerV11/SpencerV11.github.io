@@ -324,6 +324,18 @@ body {
     align-items: center;
 }
 
+.project-left button {
+    background-color: rgb(246, 255, 113); 
+    border-radius: 5px;
+    margin-top: .6rem;
+    border: none;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.project-left button:hover {
+    cursor: pointer;
+}
+
 .project-left h3 {
     border-bottom: 2px solid black;
 }
@@ -347,16 +359,15 @@ body {
 }
 
 .group-car:hover {
-    animation: slider 20s infinite;
+    animation: slider 15s infinite;
     cursor: pointer;
 }
 
 @keyframes slider {
-    0% { background-image: url('./images/Homepage.png')}
-    20% {background-image: url('./images/Homepage.png')}
+    0%, 10%, 70% { background-image: url('./images/Homepage.png')}
     40% { background-image: url('./images/Homepage2.png')}
     60% { background-image: url('./images/Homepage3.png')}
-    70% { background-image: url('./images/Homepage.png')}
+    /* 70% { background-image: url('./images/Homepage.png')} */
 }
 
 .project-right {
@@ -365,6 +376,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.project-right button:hover {
+    cursor: pointer;
+}
+
+.project-right button {
+    background-color: rgb(246, 255, 113); 
+    border-radius: 5px;
+    margin-top: .6rem;
+    border: none;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .project-right h3 {
@@ -380,7 +403,7 @@ body {
 }
 
 .personal-car:hover {
-    animation: slider2 20s infinite;
+    animation: slider2 15s infinite;
     cursor: pointer;
 }
 
