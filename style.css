@@ -360,7 +360,7 @@ body {
 
 .group-car:hover {
     animation: slider 15s infinite;
-    cursor: pointer;
+    cursor: progress;
 }
 
 @keyframes slider {
@@ -404,15 +404,13 @@ body {
 
 .personal-car:hover {
     animation: slider2 15s infinite;
-    cursor: pointer;
+    cursor: progress;
 }
 
 @keyframes slider2 {
-    0% { background-image: url('./images/OHomepage.png')}
-    20% { background-image: url('./images/OHomepage.png')}
+    0%, 10%, 70% { background-image: url('./images/OHomepage.png')}
     40% { background-image: url('./images/OHomepage2.png')}
     60% { background-image: url('./images/OHomepage3.png')}
-    70% { background-image: url('./images/OHomepage.png')}
 }
 
 
