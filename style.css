@@ -358,10 +358,10 @@ body {
     height: 230px;
 }
 
-.group-car:hover {
+/* .group-car:hover {
     animation: slider 15s infinite;
     cursor: progress;
-}
+} */
 
 @keyframes slider {
     0%, 10%, 70% { background-image: url('./images/Homepage.png')}
@@ -402,10 +402,10 @@ body {
     height: 230px;
 }
 
-.personal-car:hover {
+/* .personal-car:hover {
     animation: slider2 15s infinite;
     cursor: progress;
-}
+} */
 
 @keyframes slider2 {
     0%, 10%, 70% { background-image: url('./images/OHomepage.png')}
