@@ -29,6 +29,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     z-index: 10;
+    scroll-behavior: smooth;
 }
 
 .header a {
@@ -36,6 +37,7 @@ body {
     font-size: .9em;
     margin: 1.5rem;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 /* @media(max-width: 1974px) {
@@ -144,6 +146,8 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .who-am-i {
@@ -203,6 +207,8 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .skills-content {
@@ -234,9 +240,8 @@ body {
 }
 
 .skill-item img:hover {
-    transform: translateY(-50px);
-    opacity: 0;
-    transition: 1s;
+    transform: scale(1.05);
+    transition: .3s;
 }
 
 .skills-title {
