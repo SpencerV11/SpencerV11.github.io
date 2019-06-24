@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/ee524a2222.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <title>Spencer's Portfolio</title>
 </head>
 
@@ -24,7 +25,7 @@
     </header>
     <!-- Pop up to go to the top -->
     <div class='pop-up'>
-        <img src="https://img.icons8.com/ios/40/000000/left-up2-filled.png">
+        <a href='#home'><img src="https://img.icons8.com/ios/50/000000/up-filled.png"></a>
     </div>
     
     <!-- BACKGROUND IMAGE'S
@@ -63,28 +64,40 @@
     <div id='skills'>
         <div class='skills-content'>
             <div class='skill-item'>
-                <img width='160' src='./images/react.png' alt='' />
+                <img src='./images/react.png' alt='' />
                 <div>React</div>
             </div>
             <div class='skill-item'>
-                <img width='160' src='./images/html_css.png' alt='' />
+                <img src='./images/html_css.png' alt='' />
                 <div>HTML/CSS</div>
             </div>
             <div class='skill-item'>
-                <img width='160' height='' src='./images/javascript.png' alt='' />
+                <img src='./images/javascript.png' alt='' />
                 <div>Javascript</div>
             </div>
             <div class='skill-item'>
-                <img width='160' height='' src='./images/nodejs2.png' alt='' />
+                <img src='./images/nodejs2.png' alt='' />
                 <div>Node.js</div>
             </div>
             <div class='skill-item'>
-                <img width='160' src='./images/elephant.png' alt='' />
+                <img src='./images/elephant.png' alt='' />
                 <div>Postgresql</div>
             </div>
             <div class='skill-item'>
-                <img width='160' src='./images/express2.png' atl='' />
+                <img src='./images/express2.png' atl='' />
                 <div>Express</div>
+            </div>
+            <div class='skill-item'>
+                <img src='./images/sass.png' atl='' />
+                <div>Sass</div>
+            </div>
+            <div class='skill-item'>
+                <img src='./images/redux.png' alt='' />
+                <div>Redux</div>
+            </div>
+            <div class='skill-item'>
+                <img src='./images/git.png' alt='' />
+                <div>Git</div>
             </div>
         </div>
         <line></line>
@@ -146,6 +159,24 @@
             <p>Let me know of any opportunities.</p>
         </div>
     </div>
+    <script>
+        $(window).scroll(function() {
+            if($(window).scrollTop() > 50) {
+                $('.header').addClass('transparent')
+                $('.header').addClass('border-bottom')
+            } else {
+                $('.header').removeClass('transparent')
+                $('.header').removeClass('border-bottom')
+            }
+        })
+        $(window).scroll(function() {
+            if($(window).scrollTop() > 700) {
+                $('.pop-up').addClass('none')
+            } else {
+                $('.pop-up').removeClass('none')
+            }
+        })
+    </script>
 </body>
 
 </html>
